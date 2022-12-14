@@ -23,7 +23,7 @@
 <style>
  /* Menu opiton attributes icons */
  
- .loader {
+ .preloader {
      background: #FFFFFF;
      justify-content: center;
      background-size: 40%;
@@ -35,6 +35,7 @@
      transform: opacity 1s linear;
      align-items: center;
      left: 35%;
+     opacity: 1;
  }
  
  
@@ -150,9 +151,20 @@ function myFunction() {
 		<p><center><img src="https://drive.google.com/uc?export=view&id=1RbuTLPAzTQEmCUJ1qLbPhPs-r4EpvN9f" style="max-width:76%"></center></p>
 		
         
-        <div class="loader"><img src="https://i.ibb.co/hRVRfLs/whitelogo.gif" alt="spinner"></div>
+        <div class="preloader"><img src="https://i.ibb.co/hRVRfLs/whitelogo.gif" alt="spinner"></div>
         
         <script>
+            const myPreloader = document.querySelector('.preloader');
+            const fadeOutEffect = setInterval(() => {
+  if (!preloader.style.opacity) {
+    preloader.style.opacity = 1;
+  }
+  if (preloader.style.opacity > 0) {
+    preloader.style.opacity -= 0.1;
+  } else {
+    clearInterval(fadeEffect);
+  }
+}, 300); window.addEventListener('load', fadeOutEffect);
         
         </script>
         
