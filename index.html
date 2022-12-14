@@ -23,20 +23,7 @@
 <style>
  /* Menu opiton attributes icons */
  
- .preloader {
-     background: #FFFFFF;
-     justify-content: center;
-     background-size: 40%;
-     height: 100vh;
-     width: 100%;
-     position: fixed;
-     z-index: 9999;
-     transition: opacity 0.2s linear;
-     transform: opacity 1s linear;
-     align-items: center;
-     left: 35%;
-     opacity: 1;
- }
+ 
  
  
 .logo {
@@ -154,18 +141,7 @@ function myFunction() {
         <div class="preloader"><img src="https://i.ibb.co/hRVRfLs/whitelogo.gif" alt="spinner"></div>
         
         <script>
-            const myPreloader = document.querySelector('.preloader');
-            const fadeOutEffect = setInterval(() => {
-  if (!preloader.style.opacity) {
-    preloader.style.opacity = 1;
-  }
-  if (preloader.style.opacity > 0) {
-    preloader.style.opacity -= 0.1;
-  } else {
-    clearInterval(fadeEffect);
-  }
-}, 300); window.addEventListener('load', fadeOutEffect);
-        
+            
         </script>
         
 	</body>
