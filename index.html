@@ -1,7 +1,43 @@
 <!DOCTYPE html>
 <html>
-	<head>
+	<head><link rel="stylesheet" href="style.css">
+	
+       <!-- preloader goes here-->
+        <div class="loader"><img src="https://drive.google.com/uc?export=view&id=1LgPwJlofXBgTtv3AskpZm3sx-EbNfb-1" alt="spinner"></div>
+        
+        <style>
+            .loader {
+	border: 16px solid #f3f3f3; /* Light grey */
+	border-top: 16px solid #03002e; /* Dark Blue */
+	border-radius: 50%;
+	animation: spinloader 2s linear infinite;
+    position: fixed;
+    left: 45%;
+    top: 35%;
+    
+}
+.loader img{
+	height : 120px;
+	width : 120px;
+	animation: spinlogo 3s linear infinite;
+}
+@keyframes spinloader {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}
+@keyframes spinlogo {
+	4% { transform: rotate(360deg); }
+	100% { transform: rotate(0deg); }
+}
+
+        </style>
+       
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+       <!-- preloader stops here-->
+        
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--background tag starts here-->
+        
 		<style>
 			body {
 				background-image: url(https://drive.google.com/uc?export=view&id=1Qi2Z3WGV9hIymF0PClMD6E-VzmNL-SRO); background-size: cover;
@@ -18,13 +54,14 @@
 				color: #2f2d2d;
 			}
 		</style>
-		<!-- Controls color and functions of Nav menu. change opacity of nav bar Ln4 42 , Ln4 462 & Ln5 542 -->
+		
+        <!-- Controls color and functions of Nav menu. change opacity of nav bar Ln4 42 , Ln4 462 & Ln5 542 -->
+        <script> $(document).ready(function() {         $(".loader").fadeOut("slow");     });
+        </script>
 
 <style>
- /* Menu opiton attributes icons */
- 
- 
- 
+ /* CSS*/
+    
  
 .logo {
     width:80px;
@@ -126,24 +163,25 @@ function myFunction() {
     <a href="https://www.youtube.com/channel/UCih9MOhHc_BaQ14O7WipSXw"><img class="youtube" 
        src="https://drive.google.com/uc?export=view&id=1ECrnQ6BehmIODwaZtuDrbe1IbX32AhlW"></a>
   </div>
+    
   <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
   </a>
 </div>
-
-	</head>
+</head>
+    <!-- Starts the body of webpage-->
+    
 	<body>
 		<h1></h1>
 		<p><center><img src="https://drive.google.com/uc?export=view&id=1RbuTLPAzTQEmCUJ1qLbPhPs-r4EpvN9f" style="max-width:76%"></center></p>
-		
+     
+        
     
-        
-        <script>
-            
-        </script>
-        
-	</body>
+    
+    </body>
+    
+    
 	<!-- Footer of web-page -->
 	<style>
 .footer {
